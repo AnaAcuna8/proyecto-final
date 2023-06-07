@@ -1,0 +1,309 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    
+  }
+  
+/* Estilos para pantallas pequeñas (≥576px) */
+@media screen and (min-width: 576px) {
+  /* Estilos para el header */
+  .menu {
+    padding: 1rem;
+  }
+
+  .menu ul {
+    gap: 8px;
+  }
+
+  .call-to-action {
+    margin-top: 25vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #main {
+    padding: 2rem;
+  }
+
+  .first-section {
+    padding: 2rem;
+  }
+
+  .personalizado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personalizado img {
+    width: 80%;
+  }
+
+  .clases {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .personalizado ul {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+  }
+
+  .personalizado ul li {
+    padding: 0.3rem;
+  }
+
+  .clases button {
+    margin-top: 1rem;
+  }
+
+  .testimonios {
+    gap: 1rem;
+  }
+
+  .testimonio {
+    flex-basis: calc(50% - 1rem);
+  }
+
+  div h2 {
+    margin: 2rem auto;
+  }
+}
+  /*header*/
+
+.header {
+    background-image: url(/img/header.jpg);
+    background-size: cover;
+    height: 105vh;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0.5rem;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 45vh;
+    color: #ffff;
+}
+
+h1 {
+  color:#fff;
+  font-size: 3rem;
+  width: 50%;
+  margin: auto;
+  font-weight: bold;
+}
+
+.call-to-action p {
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #fff;
+    color: #000;
+    padding: 1rem 3rem;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+  /* primer sección*/
+
+.first-section {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 2em;
+    padding: 5rem 12rem;
+    width: 100%;
+    margin: 0;
+    height: 70vh;
+}
+
+  /*segunda sección*/
+
+  .personalizado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .clases {
+    text-align: center;
+    width: 50%;
+  }
+
+  .personalizado img {
+    width: 50%;
+  }
+
+  .personalizado ul {
+    list-style-type: none;
+    margin-bottom: 3.5rem;
+    font-size: 1em;
+  }
+
+  .personalizado ul li {
+    padding: 0.5rem;
+  }
+
+.clases button {
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    background-color: #336666;
+    color: #fff;
+    font-weight: bold;
+}
+/* tercer sección */
+
+div h2 {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 2rem;
+ }
+
+.testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 8px;
+  }
+  
+  .testimonio {
+    flex: 1 1 300px; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #b5b0b4;
+    text-align: center;
+    color: #000;
+    height: 50vh;
+  }
+  
+ .testimonio img {
+    margin: 25px auto;
+ }
+
+ .texto {
+    font-style: italic;
+ }
+ .autor {
+    margin-top: 15px;
+ }
+
+  .testimonio img {
+    width: 50px; /* Ajusta el valor según el tamaño deseado */
+    height: 50px; /* Ajusta el valor según el tamaño deseado */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* footer */
+
+  #footer {
+    background-color: #336666;
+    margin-top: 5rem;
+    color: #fff;
+  }
+
+  #footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .container ul {
+    list-style-type: none;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .social-icons li {
+    margin-top: 2.9rem;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .datos li {
+    padding: 0.5rem;
+  }
+  .author {
+    padding: 40px;
+    background-color: silver;
+  }
+
+  .author a {
+    color: #000;
+    font-size: 14px;
+  }

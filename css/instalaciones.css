@@ -1,0 +1,304 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    
+/* Estilos generales */
+
+/* Estilos para pantallas extra pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    /* Ajusta los estilos para dispositivos móviles */
+    /* Por ejemplo: */
+  
+    /* Ajustar el tamaño de fuente */
+    body {
+      font-size: 14px;
+    }
+  
+    /* Centrar imágenes */
+    .instalaciones {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* Ajustar márgenes y paddings */
+    .container {
+      margin: 1rem;
+      padding: 0.5rem;
+    }
+  
+    /* Modificar diseño del menú */
+    .menu {
+      padding: 1rem;
+    }
+  
+    .menu ul {
+      gap: 8px;
+    }
+  
+    .menu a.logo {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (tabletas en vertical) */
+  @media screen and (min-width: 576px) {
+    /* Ajusta los estilos para pantallas pequeñas */
+    /* Por ejemplo: */
+  
+    /* Ajustar tamaño de fuente */
+    body {
+      font-size: 16px;
+    }
+  
+    /* Ajustar tamaño de imágenes */
+    .instalaciones {
+      max-width: 800px;
+    }
+  
+    /* Modificar diseño del menú */
+    .menu {
+      padding: 2rem;
+    }
+  
+    .menu ul {
+      gap: 16px;
+    }
+  
+    .menu a.logo {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Estilos para pantallas grandes (escritorio) */
+  @media screen and (min-width: 992px) {
+    /* Ajusta los estilos para pantallas grandes */
+    /* Por ejemplo: */
+  
+    /* Ajustar tamaño de fuente */
+    body {
+      font-size: 18px;
+    }
+  
+    /* Ajustar tamaño de imágenes */
+    .instalaciones {
+      max-width: 100%;
+    }
+  
+    /* Modificar diseño del menú */
+    .menu {
+      padding: 2rem;
+    }
+  
+    .menu ul {
+      gap: 16px;
+    }
+  
+    .menu a.logo {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /*header*/
+
+  #header {
+    background-color: #000;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0.5rem;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.menu a.logo {
+    font-size: 1.5rem;
+}
+
+span {
+    color: #ffffff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+a {
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: hsl(0, 0%, 75%); /* Cambia el color a tu preferencia */
+  }
+
+/* Media queries para pantallas extra pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    .menu {
+        padding: 1rem;
+    }
+  
+    .menu ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+  
+    .menu a.logo {
+        font-size: 1.2rem;
+    }
+  
+    .menu-icon {
+        display: block;
+    }
+  
+    .mobile-menu ul {
+        display: none;
+    }
+  
+    .mobile-menu.show ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* main */
+
+#main {
+    margin-top: 100px;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.container p {
+    margin-bottom: 1.5rem;
+}
+
+.container img {
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.instalaciones {
+    width: 100%;
+    max-width: 600px; /* Ajusta el valor según tus preferencias */
+    height: auto;
+    margin: 1.5rem 0; /* Ajusta el margen según tus preferencias */
+    transition: opacity 0.3s ease;
+  }
+  
+  .instalaciones:hover {
+    opacity: 0.8;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* footer */
+
+  #footer {
+    background-color: #336666;
+    margin-top: 5rem;
+    color: #fff;
+  }
+
+  #footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .container ul {
+    list-style-type: none;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .social-icons li {
+    margin-top: 2.9rem;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .datos li {
+    padding: 0.5rem;
+  }
+  .author {
+    padding: 40px;
+    background-color: silver;
+  }
+
+  .author a {
+    color: #000;
+    font-size: 14px;
+  }

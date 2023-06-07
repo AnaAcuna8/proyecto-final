@@ -1,0 +1,284 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Media queries para pantallas pequeñas (_sm, tablets _en vertical) ≥ 576px */
+@media screen and (min-width: 576px) {
+  /* Header */
+  .menu {
+    padding: 1rem;
+  }
+  
+  .menu a.logo {
+    font-size: 1.2rem;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .mobile-menu ul {
+    display: none;
+  }
+  
+  .mobile-menu.show ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Main */
+  #nosotros h1 {
+    margin-top: 3rem;
+  }
+  
+  .parrafos {
+    padding: 2.5rem;
+  }
+  
+  .container img {
+    padding: 0 2.5rem;
+  }
+}
+
+/* Media queries para pantallas grandes (lg, tamaño escritorio) ≥ 992px */
+@media screen and (min-width: 992px) {
+  /* Header */
+  .menu {
+    padding: 2rem;
+  }
+  
+  .menu ul {
+    gap: 24px;
+  }
+  
+  .menu a.logo {
+    font-size: 1.5rem;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+  /* Main */
+  #nosotros h1 {
+    margin-top: 5rem;
+  }
+  
+  .parrafos {
+    padding: 5.5rem 2.5rem;
+  }
+  
+  .container img {
+    padding: 0 2.5rem 5.5rem;
+  }
+  
+  .container h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+/*header*/
+
+#header {
+    background-color: #000;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0.5rem;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.menu a.logo {
+    font-size: 1.5rem;
+}
+
+span {
+    color: #ffffff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Media queries para pantallas extra pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    .menu {
+        padding: 1rem;
+    }
+  
+    .menu ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+  
+    .menu a.logo {
+        font-size: 1.2rem;
+    }
+  
+    .menu-icon {
+        display: block;
+    }
+  
+    .mobile-menu ul {
+        display: none;
+    }
+  
+    .mobile-menu.show ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*main*/
+
+#nosotros {
+    width: 100%;    
+    line-height: 1.2em;
+}
+
+#nosotros h1 {
+    text-align: center;
+    color: #336666;
+    padding: 1rem;
+    margin-bottom: -3rem;
+    margin-top: 5rem;
+}
+
+.parrafos {
+    padding: 5.5rem 2.5rem 5.5rem 2.5rem;
+}
+
+.parrafos p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.container img {
+    padding: 0 2.5rem 5.5rem 2.5rem;
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+}
+
+  /* footer */
+
+  #footer {
+    background-color: #336666;
+    color: #fff;
+  }
+
+  #footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .container ul {
+    list-style-type: none;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .social-icons li {
+    margin-top: 2.9rem;
+  }
+
+  form {
+    display: flex;
+    margin-top: 2.9rem;
+    gap: 0.5rem;
+  }
+
+  form button {
+    background-color: #fff;
+    color: #336666;
+    padding: 0.3rem 0.7rem;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  .author {
+    padding: 40px;
+    background-color: silver;
+  }
+
+  .author a {
+    color: #000;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #footer .container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .social-icons {
+      margin-bottom: 2.9rem;
+      flex-grow: 1;
+    }
+  
+    .newsletter {
+      margin-top: 2.9rem;
+    }
+  }
+  /* footer */
