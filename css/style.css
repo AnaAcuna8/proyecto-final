@@ -14,7 +14,6 @@
 html,
 body {
     height: 100%;
-
 }
 
 img,
@@ -27,12 +26,12 @@ svg {
 body {
     line-height: 1.5;
     font-family: 'Be Vietnam Pro', sans-serif;
-    
   }
   
 /* Estilos para pantallas pequeñas (≥576px) */
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   /* Estilos para el header */
+
   .menu {
     padding: 1rem;
   }
@@ -63,7 +62,7 @@ body {
   }
 
   .personalizado img {
-    width: 80%;
+    width: 100%;
   }
 
   .clases {
