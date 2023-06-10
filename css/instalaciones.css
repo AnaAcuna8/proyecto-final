@@ -30,29 +30,23 @@ body {
     
 /* Estilos generales */
 
-/* Estilos para pantallas extra pequeñas (móviles) */
 @media screen and (max-width: 576px) {
-    /* Ajusta los estilos para dispositivos móviles */
-    /* Por ejemplo: */
+   
   
-    /* Ajustar el tamaño de fuente */
     body {
       font-size: 14px;
     }
   
-    /* Centrar imágenes */
     .instalaciones {
       margin-left: auto;
       margin-right: auto;
     }
   
-    /* Ajustar márgenes y paddings */
     .container {
       margin: 1rem;
       padding: 0.5rem;
     }
   
-    /* Modificar diseño del menú */
     .menu {
       padding: 1rem;
     }
@@ -68,20 +62,15 @@ body {
   
   /* Estilos para pantallas pequeñas (tabletas en vertical) */
   @media screen and (min-width: 576px) {
-    /* Ajusta los estilos para pantallas pequeñas */
-    /* Por ejemplo: */
-  
-    /* Ajustar tamaño de fuente */
+   
     body {
       font-size: 16px;
     }
   
-    /* Ajustar tamaño de imágenes */
     .instalaciones {
       max-width: 800px;
     }
   
-    /* Modificar diseño del menú */
     .menu {
       padding: 2rem;
     }
@@ -97,20 +86,15 @@ body {
   
   /* Estilos para pantallas grandes (escritorio) */
   @media screen and (min-width: 992px) {
-    /* Ajusta los estilos para pantallas grandes */
-    /* Por ejemplo: */
   
-    /* Ajustar tamaño de fuente */
     body {
       font-size: 18px;
     }
   
-    /* Ajustar tamaño de imágenes */
     .instalaciones {
       max-width: 100%;
     }
   
-    /* Modificar diseño del menú */
     .menu {
       padding: 2rem;
     }
@@ -171,7 +155,7 @@ a {
   }
   
   a:hover {
-    color: hsl(0, 0%, 75%); /* Cambia el color a tu preferencia */
+    color: hsl(0, 0%, 75%); 
   }
 
 /* Media queries para pantallas extra pequeñas (móviles) */
@@ -233,9 +217,9 @@ a {
 }
 .instalaciones {
     width: 100%;
-    max-width: 600px; /* Ajusta el valor según tus preferencias */
+    max-width: 600px; 
     height: auto;
-    margin: 1.5rem 0; /* Ajusta el margen según tus preferencias */
+    margin: 1.5rem 0; 
     transition: opacity 0.3s ease;
   }
   
